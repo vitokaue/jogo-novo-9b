@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Hack & Slash — Mini Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <h1>Hack & Slash — Mini Game</h1>
+            <div class="controls">
+                <button id="btnRestart" class="btn">Reiniciar</button>
+                <div class="bar">Pontuação: <span id="score">0</span></div>
+            </div>
+        </header>
+
+        <div class="game-card">
+            <canvas id="gameCanvas" width="1100" height="620"></canvas>
+
+            <div class="hud">
+                <div class="left">
+                    <div class="bar">Vida: <span id="hp">100</span></div>
+                    <div class="bar">Wave: <span id="wave">1</span></div>
+                </div>
+                <div class="right">
+                    <div class="bar">Melhor: <span id="best">0</span></div>
+                </div>
+            </div>
+
+            <div class="help">Controles: <strong>WASD</strong> mover • <strong>Mouse</strong> mira •
+                <strong>Clique</strong> atacar • <strong>R</strong> reiniciar</div>
+        </div>
+    </div>
+
+    <!-- script carregado no final garante que o canvas existe -->
+    <script src="script.js"></script>
+</body>
+
+</html>
